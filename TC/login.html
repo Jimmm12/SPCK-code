@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Đăng Nhập</title>
     <!-- Font Awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -25,25 +25,32 @@
       crossorigin="anonymous"
     ></script>
     <style>
-        body {
-            height: 900px;
-        
-        }
-        .login__section {
-            width: 70%;
-            box-shadow: 0px 1px 10px #0096FF;
-            border: 1px solid;
-        }
+      body {
+        height: 900px;
+      }
+      .login__section {
+        width: 70%;
+        box-shadow: 0px 1px 10px #0096ff;
+        border: 1px solid;
+      }
     </style>
   </head>
-  <body class="d-flex justify-content-center align-content-center> align-items-center">
-    <section class="login__section">
-      <div class="container py-5 h-100 ">
+  <body
+    class="d-flex justify-content-center align-content-center align-items-center"
+    style="
+      background-image: url('https://images.unsplash.com/photo-1470116945706-e6bf5d5a53ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80');
+    "
+  >
+    <section class="login__section" style="background-color:#fff">
+      <div class="container py-5 h-100">
         <div class="row d-flex align-items-center justify-content-center h-100">
-            <h1 class="login__title d-flex justify-content-center mb-3" style="color: #0096FF">
-                Đăng nhập bệnh viện Hà Nội
-            </h1>
-            <div class="col-lg-7">
+          <h1
+            class="login__title d-flex justify-content-center mb-3"
+            style="color: #0096ff"
+          >
+            Đăng nhập bệnh viện Hà Nội
+          </h1>
+          <div style="width: 580px" class="col-lg-7">
             <img
               src="https://media.istockphoto.com/vectors/hospital-emergency-room-medical-healthcare-facility-building-vector-id1216623966?b=1&k=20&m=1216623966&s=170667a&w=0&h=QELWzO02cl5NQkUrJ-X1eBZzPtuaKS8ENd-UxY0uwhs="
               class="img-fluid"
@@ -55,12 +62,12 @@
               <!-- Email input -->
               <div class="form-outline mb-4">
                 <input
-                  type="email"
+                  type="text"
                   id="form1Example13"
                   class="form-control form-control-lg"
                 />
                 <label class="form-label" for="form1Example13"
-                  >Số điện thoại</label
+                  >Số điện thoại/Email</label
                 >
               </div>
 
@@ -85,7 +92,7 @@
                     value=""
                     id="form1Example3"
                     checked
-                    style="background-color:#0096FF"
+                    style="background-color: #0096ff"
                   />
                   <label class="form-check-label" for="form1Example3">
                     Ghi nhớ tài khoản
@@ -94,8 +101,15 @@
                 <a href="#!">Quên mật khẩu?</a>
               </div>
 
+              <!-- alert -->
+                <p id="alert" style="text-align:center; display: none; font-weight:bold; font-size:15px; font-style: italic;">a</p>
               <!-- Submit button -->
-              <button type="submit" class="btn btn-primary btn-lg btn-block" style="background-color: #0096FF">
+              <button
+               
+                class="btn btn-primary btn-lg btn-block"
+                style="background-color: #0096ff"
+                id="submit-login"
+              >
                 Đăng Nhập
               </button>
 
@@ -113,7 +127,7 @@
               </a>
               <a
                 class="btn btn-primary btn-lg btn-block"
-                style="background-color: #FF9F29"
+                style="background-color: #ff9f29"
                 href="#!"
                 role="button"
               >
@@ -124,6 +138,7 @@
         </div>
       </div>
     </section>
+    <script src="/JS/login.js"></script>
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
