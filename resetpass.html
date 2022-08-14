@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Đăng Kí</title>
-    <link rel="stylesheet" href="/TC-CSS/signup.css" />
+    <title>Đặt lại mật khẩu</title>
+    <link rel="stylesheet" href="CSS/signup.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
@@ -28,49 +28,27 @@
         background-image: url('https://images.unsplash.com/photo-1470116945706-e6bf5d5a53ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80');
       "
     >
-      <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+      <div class="mask d-flex align-items-center h-100 gradient-custom-3 ">
         <div class="container h-100">
           <div
             class="row d-flex justify-content-center align-items-center h-100"
           >
-            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+            <div class="col-12 col-md-9 col-lg-7 col-xl-6 mb-10">
               <div class="card" style="border-radius: 15px">
                 <div class="card-body p-5">
                   <h2 class="text-uppercase text-center mb-5">
-                    Đăng kí tài khoản
+                    đặt lại mật khẩu
                   </h2>
 
                   <form>
                     <div class="form-outline mb-4">
                       <input
-                        type="text"
-                        id="form3Example1cg"
+                        type="password"
+                        id="form3Example4cg"
                         class="form-control form-control-lg"
                       />
-                      <label class="form-label" for="form3Example1cg"
-                        >Your Name</label
-                      >
-                    </div>
-
-                    <div class="form-outline mb-4">
-                        <input
-                          type="text"
-                          id="form3Example2cg"
-                          class="form-control form-control-lg"
-                        />
-                        <label class="form-label" for="form3Example2cg"
-                          >Your Phone Number</label
-                        >
-                      </div>
-
-                    <div class="form-outline mb-4">
-                      <input
-                        type="email"
-                        id="form3Example3cg"
-                        class="form-control form-control-lg"
-                      />
-                      <label class="form-label" for="form3Example3cg"
-                        >Your Email</label
+                      <label class="form-label" for="form3Example4cg"
+                        >Old Password</label
                       >
                     </div>
 
@@ -81,9 +59,11 @@
                         class="form-control form-control-lg"
                       />
                       <label class="form-label" for="form3Example4cg"
-                        >Password</label
+                        >New Password</label
                       >
                     </div>
+                    
+
 
                     <div class="form-outline mb-4">
                       <input
@@ -92,46 +72,27 @@
                         class="form-control form-control-lg"
                       />
                       <label class="form-label" for="form3Example4cdg"
-                        >Repeat your password</label
+                        >Repeat your new password</label
                       >
                     </div>
 
-                    <p id="checkError" style="color: red; font-weight: bold; font-size:17px; text-align:center;"></p>
-
-                    <div class="form-check d-flex justify-content-center mb-5">
-                      <input
-                        class="form-check-input me-2"
-                        type="checkbox"
-                        value=""
-                        id="form2Example3cg"
-                        style="background-color: #0096FF;"
-                        
-                      />
-                      <label class="form-check-label" for="form2Example3g">
-                        I agree all statements in
-                        <a href="#!" class="text-body"
-                          ><u>Terms of service</u></a
-                        >
-                      </label>
-                    </div>
 
                     <div class="d-flex justify-content-center">
                       <button
-                        id="submit-btn"
                         type="button"
                         class="btn btn-block btn-lg gradient-custom-4 text-body btn-register"
                         style="background-color: #0096FF;"
                       >
-                        Register
+                        Submit
                       </button>
                     </div>
 
-                    <p class="text-center text-muted mt-5 mb-0">
+                    <!-- <p class="text-center text-muted mt-5 mb-0">
                       Have already an account?
                       <a href="login.html" class="fw-bold text-body" 
                         ><u>Login here</u></a
                       >
-                    </p>
+                    </p> -->
                   </form>
                 </div>
               </div>
@@ -140,11 +101,12 @@
         </div>
       </div>
     </section>
-   <script src="/JS/data.js"></script>
+    <script>
+        
+    </script>
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
     ></script>
-    
   </body>
 </html>
